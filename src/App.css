@@ -1,0 +1,252 @@
+.my-container {
+  max-width: 1200px;
+  margin: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: black;
+}
+
+.fa-solid,
+.fas {
+  color: white;
+}
+.input-group .btn {
+  border-radius: 0;
+  background: #619300;
+}
+
+.my-btn {
+  padding: 5px 20px;
+  font-size: 14px;
+  background: 0 0;
+  color: #5c37d0;
+  border: 1px solid #5c37d0;
+  border-radius: 2px;
+  margin-bottom: 8px;
+}
+
+.my-subheading {
+  margin: 0;
+  border-bottom: solid 2px #de9d00;
+}
+
+p.product-description {
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+p.product-price {
+  color: #619300;
+  text-align: left;
+  font-size: 19px;
+  font-weight: 500;
+  margin-right: 40px;
+}
+
+.product-stores {
+  font-weight: 400;
+  background: 0 0;
+  border: solid 1px #61930070;
+  color: #619300 !important;
+  padding: 0 10px;
+  border-radius: 20px;
+}
+
+.my-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.button-categories {
+  border-radius: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 13px;
+  color: black;
+  border-color: black;
+  margin-right: 7px;
+  font-weight: 500;
+}
+
+.apply-button {
+  background-color: #619300;
+  border-color: #619300;
+}
+
+.apply-button:hover {
+  background-color: #436501;
+  border-color: #619300;
+}
+
+.img-thumbnail {
+  border: none;
+}
+
+.my-badges {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.card {
+  border: none;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+.products-container {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.d-flex.align-items-center.products-container > * {
+  width: 25%;
+}
+.col-md-4.mb-3.name-field {
+  margin-right: 50px;
+}
+h5.product-page-title {
+  margin-right: 18px;
+}
+
+h4.product-page-price {
+  color: #619300;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* loader CSS start */
+.demo {
+  background-color: #436501;
+}
+
+.loader {
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader .inner-loader {
+  border: 10px solid transparent;
+  border-radius: 100px;
+  box-shadow: 150px 0px 2px 2px, 150px 0px 2px 2px, 150px 40px 2px 2px,
+    150px 0px 2px 2px, 150px 0px 2px 2px, 150px 0px 2px 2px, 150px 0px 2px 2px;
+  position: absolute;
+  top: 45px;
+  left: -100px;
+  animation: animate 1s ease-in-out infinite;
+}
+
+@keyframes animate {
+  50% {
+    box-shadow: 110px 0px 0px 0px #436501, 130px 40px 0px 0px #436501,
+      150px 0px 0px 0px #436501, 170px 40px 0px 0px #436501,
+      190px 0px 0px 0px #436501, 170px -40px 0px 0px #436501,
+      130px -40px 0px 0px #436501;
+  }
+}
+
+/* loader CSS end */
+
+@media (max-width: 575px) {
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .d-flex.align-items-center.products-container > * {
+    width: 90%;
+  }
+  .footer-copyright {
+    display: block;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 575px) {
+  .d-flex.align-items-center.mt-3 {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+  h4.text-success.product-page-price {
+    align-self: flex-start;
+  }
+  h5.product-page-title {
+    font-size: 27px;
+  }
+  .form-row.d-flex {
+    flex-direction: column;
+  }
+  .button-categories {
+    margin-bottom: 12px;
+  }
+  .btn.mx-1-group.mt-4.border {
+    text-align: start;
+  }
+  .pricing-sheet-title {
+    font-size: 13px;
+    text-align: start;
+  }
+  .pricing-sheet-price {
+    font-size: 13px;
+    text-align: end;
+  }
+  .my-3 {
+    margin-top: 4px !important;
+  }
+  .contact-us-form {
+    display: block;
+}
+}
+
+@media (min-width: 576px) and (max-width: 900px) {
+  .d-flex.align-items-center.products-container > * {
+    width: 50%;
+  }
+  .product-stores {
+    font-size: 13px;
+    padding-right: 4px;
+    padding-left: 4px;
+  }
+  .button-categories {
+    margin-bottom: 12px;
+  }
+  .btn.mx-1-group.mt-4.border {
+    text-align: start;
+  }
+  .my-3 {
+    margin-top: 4px !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1050px) {
+  p.product-description {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 330px) {
+  .Header {
+    display: none;
+  }
+}
